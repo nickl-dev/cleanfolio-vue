@@ -1,24 +1,19 @@
-# cleanfolio-vue
+## Cleanfolio
+#### A minimalist portfolio site template for developers.
 
-## Project setup
-```
-npm install
-```
+### To get started...
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+1. Clone this repo
+2. npm install
+3. Change name and tab icon in the **index.html**
+4. Change your name, picture, bio and resume link in **About**
+5. Use the Project props accordingly in **Development** to showcase your work and add your skills at the bottom in the technologies section
+6. Link the LinkedIn and Github icons to your profiles
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### ...and that's pretty much it!
 
-### Lints and fixes files
-```
-npm run lint
-```
+#### If you're anything like me- a developer who loves clean and minimal UI- then I'm sure you'll enjoy this template. I encourage you to make changes and improvements where you see fit.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### If you want to connect and build cool stuff together, find me on LinkedIn : https://www.linkedin.com/in/nicklal/
+
+#### Happy hacking 🤓!
