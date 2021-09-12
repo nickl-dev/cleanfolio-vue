@@ -4,7 +4,7 @@
 
     <!-- Looping through your projects -->
     <Project
-      v-for="project, index in projects"
+      v-for="project in projects"
       v-bind:key="project.index"
       :title="project.title"
       :description="project.description"
