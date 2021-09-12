@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <header class="about__header">
+      <!-- Fill in your name here -->
       <h1 class="about__name">Hi, I'm {Your Name}</h1>
       <vue-typer
         class="about__occupation"
@@ -9,16 +10,20 @@
       >
       </vue-typer>
     </header>
+
     <div class="about__current">
+      <!-- Fill in your current job title here -->
       <h2 class="about__job">Currently: {Job Title} @</h2>
       <a :href="companyLink" target="_blank">
         <img class="about__employer" :src="companyLogo" />
       </a>
     </div>
+
     <section class="about__wrapper">
       <div class="about__subwrapper">
         <img :src="candid" alt="Candid photo of yourself" class="about__image" />
         <div class="about__biowrapper">
+          <!-- Replace this text with a short bio about yourself -->
           <p class="about__bio">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </p>
@@ -37,20 +42,28 @@
 
 <script>
 import { VueTyper } from "vue-typer";
+// Replace with a link to a photo of yourself which can be stored in the assets folder
 import candid from '@/assets/candid.jpg';
+// Replace with a link to a picture of your company logo which can be stored in the assets folder
 import companyLogo from '@/assets/company-logo.png'
 
 export default {
+  // Name
   name: "About",
 
+// Components
   components: {
     VueTyper,
   },
 
+  // Data
   data: () => {
     return {
+      // Replace with a link to your resume which can be stored in the assets folder
       resume: '../nick-lal-resume.pdf',
       candid: candid,
+      // Replace with a link to your companys website
+      companyLink: 'https://cleanfolio.netlify.app/',
       companyLogo: companyLogo
     };
   },

@@ -4,6 +4,7 @@
     <p class="contact__thankyou">
       Thank you for taking the time to view my portfolio.
     </p>
+
     <div class="contact__links">
       <a :href="linkedin" class="contact__link">
         <LinkedInIcon :size="iconSize" class="contact__icon" />
@@ -20,18 +21,23 @@ import LinkedInIcon from "vue-material-design-icons/Linkedin.vue";
 import GitHubIcon from "vue-material-design-icons/Github.vue";
 
 export default {
+  // Name
   name: "Contact",
 
+  // Components
   components: {
     LinkedInIcon,
     GitHubIcon,
   },
 
+  // Data
   data: () => {
     return {
       iconSize: 45,
-      linkedin: "https://www.linkedin.com/in/nicklal/",
-      github: "https://github.com/nlaldev",
+      // Replace with your LinkedIn profile link
+      linkedin: "https://cleanfolio.netlify.app/",
+      // Replace with your GitHub profile link
+      github: "https://cleanfolio.netlify.app/",
     };
   },
 };
@@ -46,10 +52,12 @@ export default {
   flex-direction: column;
   height: 80vh;
   @include padding5;
+
   &__thankyou {
     margin: 5vh 0;
     font-size: $font18;
   }
+
   &__link {
     margin: 0 10px;
     @include iconLink;
