@@ -21,9 +21,9 @@
 
     <section class="about__wrapper">
       <div class="about__subwrapper">
-        <img :src="candid" alt="Candid photo of yourself" class="about__image" />
+        <img :src="personalPicture" alt="Picture of yourself" class="about__image" />
         <div class="about__biowrapper">
-          <!-- Replace this text with a short bio about yourself -->
+          <!-- Replace this text with a short bio about yourself, may want to adjust size-->
           <p class="about__bio">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </p>
@@ -42,9 +42,9 @@
 
 <script>
 import { VueTyper } from "vue-typer";
-// Replace with a link to a photo of yourself which can be stored in the assets folder
-import candid from '@/assets/candid.jpg';
-// Replace with a link to a picture of your company logo which can be stored in the assets folder
+// Replace with a link to a photo of yourself which can be stored in the ASSETS folder
+import personalPicture from '@/assets/personal-picture.jpg';
+// Replace with a link to a picture of your company logo which can be stored in the ASSETS folder
 import companyLogo from '@/assets/company-logo.png'
 
 export default {
@@ -59,9 +59,9 @@ export default {
   // Data
   data: () => {
     return {
-      // Replace with a link to your resume which can be stored in the assets folder
-      resume: '../nick-lal-resume.pdf',
-      candid: candid,
+      // Replace with a link to your resume which can be stored in the PUBLIC folder
+      resume: '../resume.pdf',
+      personalPicture: personalPicture,
       // Replace with a link to your companys website
       companyLink: 'https://cleanfolio.netlify.app/',
       companyLogo: companyLogo

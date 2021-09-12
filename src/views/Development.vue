@@ -19,7 +19,7 @@
 <script>
 // Project component that will display each project in the projects array
 import Project from "@/components/Project.vue";
-import Cleanfolio from "@/assets/project-screenshots/cleanfolio-screenshot.png";
+import projectScreenshot from "@/assets/project-screenshots/project-screenshot.jpg";
 
 export default {
   // Name
@@ -40,7 +40,7 @@ export default {
           title: "Project Title",
           description: "Project description",
           techStack: "Tech stack that you used",
-          image: Cleanfolio,
+          image: projectScreenshot,
           demo: "https://cleanfolio.netlify.app/",
           code: "https://cleanfolio.netlify.app/"
         },
@@ -48,7 +48,7 @@ export default {
           title: "Project Title",
           description: "Project description",
           techStack: "Tech stack that you used",
-          image: Cleanfolio,
+          image: projectScreenshot,
           demo: "https://cleanfolio.netlify.app/",
           code: "https://cleanfolio.netlify.app/"
         },
@@ -56,7 +56,7 @@ export default {
           title: "Project Title",
           description: "Project description",
           techStack: "Tech stack that you used",
-          image: Cleanfolio,
+          image: projectScreenshot,
           demo: "https://cleanfolio.netlify.app/",
           code: "https://cleanfolio.netlify.app/"
         }
