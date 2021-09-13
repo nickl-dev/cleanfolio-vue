@@ -13,9 +13,9 @@
 
     <div class="about__current">
       <!-- Fill in your current job title here -->
-      <h2 class="about__job">Currently: {Job Title} @</h2>
+      <h2 class="about__job">{Job Title} @</h2>
       <a :href="companyLink" target="_blank">
-        <img class="about__employer" :src="companyLogo" />
+        <img class="about__companyLogo" :src="companyLogo" />
       </a>
     </div>
 
@@ -99,8 +99,8 @@ export default {
     font-size: $font20;
   }
 
-  &__employer {
-    width: 100px;
+  &__companyLogo {
+    width: 120px;
 
     @include tablet {
       width: 150px;
