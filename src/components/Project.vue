@@ -107,6 +107,7 @@ export default {
 
   &__demo {
     @include demoLink;
+
     &:hover {
       @include invertToBlack;
     }

@@ -20,7 +20,7 @@
   @include tablet {
     width: 280px;
   }
-  
+
   @include desktop {
     width: 300px;
   }
@@ -70,7 +70,7 @@
 @mixin codeLink {
   @include link;
 
-  &:visited
+  &:visited,
   &:focus {
     color: $stockBlack;
   }

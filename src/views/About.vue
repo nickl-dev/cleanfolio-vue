@@ -11,14 +11,6 @@
       </vue-typer>
     </header>
 
-    <div class="about__current">
-      <!-- Fill in your current job title here -->
-      <h2 class="about__job">{Job Title} @</h2>
-      <a :href="companyLink" target="_blank">
-        <img class="about__companyLogo" :src="companyLogo" />
-      </a>
-    </div>
-
     <section class="about__wrapper">
       <div class="about__subwrapper">
         <img :src="personalPicture" alt="Picture of yourself" class="about__image" />
@@ -44,8 +36,6 @@
 import { VueTyper } from "vue-typer";
 // Replace with a link to a photo of yourself which can be stored in the ASSETS folder
 import personalPicture from '@/assets/personal-picture.jpg';
-// Replace with a link to a picture of your company logo which can be stored in the ASSETS folder
-import companyLogo from '@/assets/company-logo.png'
 
 export default {
   // Name
@@ -62,9 +52,6 @@ export default {
       // Replace with a link to your resume which can be stored in the PUBLIC folder
       resume: '../resume.pdf',
       personalPicture: personalPicture,
-      // Replace with a link to your companys website
-      companyLink: 'https://cleanfolio.netlify.app/',
-      companyLogo: companyLogo
     };
   },
 };
@@ -86,29 +73,6 @@ export default {
 
   &__occupation {
     @include occupation;
-  }
-
-  &__current {
-    @include textCenter;
-    @include padding5;
-    margin: 50vh 0;
-  }
-
-  &__job {
-    font-weight: 600;
-    font-size: $font20;
-  }
-
-  &__companyLogo {
-    width: 120px;
-
-    @include tablet {
-      width: 150px;
-    }
-
-    @include desktop {
-      width: 200px;
-    }
   }
 
   &__wrapper {
