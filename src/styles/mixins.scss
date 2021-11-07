@@ -69,11 +69,7 @@
 
 @mixin codeLink {
   @include link;
-
-  &:visited,
-  &:focus {
-    color: $stockBlack;
-  }
+  color: $stockBlack;
 
   &:hover {
     margin-left: 3px;
