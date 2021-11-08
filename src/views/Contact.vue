@@ -35,9 +35,9 @@ export default {
     return {
       iconSize: 45,
       // Replace with your LinkedIn profile link
-      linkedin: "https://cleanfolio.netlify.app/",
+      linkedin: "https://nlaldevcleanfolio.netlify.app/",
       // Replace with your GitHub profile link
-      github: "https://cleanfolio.netlify.app/",
+      github: "https://nlaldevcleanfolio.netlify.app/",
     };
   },
 };

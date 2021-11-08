@@ -41,24 +41,24 @@ export default {
           description: "Project description",
           techStack: "Tech stack that you used",
           image: projectScreenshot,
-          demo: "https://cleanfolio.netlify.app/",
-          code: "https://cleanfolio.netlify.app/"
+          demo: "https://nlaldevcleanfolio.netlify.app/",
+          code: "https://nlaldevcleanfolio.netlify.app/"
         },
         {
           title: "Project Title",
           description: "Project description",
           techStack: "Tech stack that you used",
           image: projectScreenshot,
-          demo: "https://cleanfolio.netlify.app/",
-          code: "https://cleanfolio.netlify.app/"
+          demo: "https://nlaldevcleanfolio.netlify.app/",
+          code: "https://nlaldevcleanfolio.netlify.app/"
         },
         {
           title: "Project Title",
           description: "Project description",
           techStack: "Tech stack that you used",
           image: projectScreenshot,
-          demo: "https://cleanfolio.netlify.app/",
-          code: "https://cleanfolio.netlify.app/"
+          demo: "https://nlaldevcleanfolio.netlify.app/",
+          code: "https://nlaldevcleanfolio.netlify.app/"
         }
       ],
     };
