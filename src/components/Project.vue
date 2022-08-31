@@ -10,53 +10,46 @@
       </div>
     </div>
     <a :href="demo">
-      <img class="project__image" :src="image" />
+      <img class="project__image" :src="image" alt="Image of project" />
     </a>
   </div>
 </template>
 
 <script>
 export default {
-  // Name
-  name: "Project",
-
-  // Props
+  name: 'Project',
+  
   props: {
     title: {
       type: String,
-      required: true,
+      required: true
     },
-
     description: {
       type: String,
-      required: true,
+      required: true
     },
-
     techStack: {
       type: String,
-      required: true,
+      required: true
     },
-
     image: {
       type: String,
-      required: true,
+      required: true
     },
-
     demo: {
       type: String,
-      required: true,
+      required: true
     },
-
     code: {
       type: String,
-      required: true,
-    },
-  },
-};
+      required: true
+    }
+  }
+}
 </script>
 
 <style lang="scss">
-@import "@/styles/global.scss";
+@import '@/styles/global.scss';
 
 .project {
   @include flexCenter;
@@ -67,7 +60,6 @@ export default {
     width: 100%;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-evenly;
   }
 
   &__wrapper {
@@ -80,7 +72,7 @@ export default {
     }
 
     @include desktop {
-      width: 350px;
+      width: 300px;
       margin: 0;
     }
   }
@@ -107,7 +99,6 @@ export default {
 
   &__demo {
     @include demoLink;
-
     &:hover {
       @include invertToBlack;
     }
@@ -120,8 +111,7 @@ export default {
   &__image {
     width: 100%;
     margin: auto;
-    max-width: 690px;
-    border-radius: 5px;
+    max-width: 500px;
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.175);
     transition: 0.1s ease-in-out;
 
@@ -134,7 +124,6 @@ export default {
     }
 
     @include desktop {
-      width: 660px;
       margin: 0;
     }
   }

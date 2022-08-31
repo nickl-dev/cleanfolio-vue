@@ -1,27 +1,9 @@
 @import "./variables.scss";
 
-$avenir: "Avenir Next";
+$font17: 17px;
 $font18: 18px;
 $font20: 20px;
 $font24: 24px;
-
-@font-face {
-  font-family: $avenir;
-  src: url("~@/assets/fonts/linotype-AvenirNextLTPro.ttf");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: $avenir;
-  src: url("~@/assets/fonts/linotype-AvenirNextLTProDemi.ttf");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: $avenir;
-  src: url("~@/assets/fonts/linotype-AvenirNextLTProBold.ttf");
-  font-weight: 700;
-}
 
 @mixin pageHeading {
   font-weight: 600;
@@ -50,13 +32,12 @@ $font24: 24px;
 @mixin occupation {
   font-size: 25px;
   font-weight: 600;
-  margin: 20px 0;
-  display: inline-block;
+  margin: 20px auto 0 auto;
 }
 
 @mixin bio {
   color: $stockWhite;
-  font-size: $font18;
+  font-size: $font17;
   margin: 20px auto;
 }
 

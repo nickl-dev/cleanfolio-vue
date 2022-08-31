@@ -3,11 +3,13 @@
     <router-link
       class="nav__link"
       active-class="nav__link--active"
-      exact to="/"
+      exact
+      to="/"
     >
-      <PersonIcon
-        title="About Me"
-        :size="iconSize"
+      <PersonIcon 
+        title="About Me" 
+        :size="iconSize" 
+        @click="scrollToTop" 
       />
     </router-link>
 
@@ -16,9 +18,10 @@
       active-class="nav__link--active"
       to="/development"
     >
-      <CodeIcon
-        title="My Work"
-        :size="iconSize"
+      <CodeIcon 
+        title="My Work" 
+        :size="iconSize" 
+        @click="scrollToTop" 
       />
     </router-link>
 
@@ -27,48 +30,55 @@
       active-class="nav__link--active"
       to="/contact"
     >
-      <MailIcon
-        title="Contact Me"
-        :size="iconSize"
+      <MailIcon 
+        title="Contact Me" 
+        :size="iconSize" 
       />
     </router-link>
   </nav>
 </template>
 
 <script>
-import PersonIcon from "vue-material-design-icons/Account.vue";
-import CodeIcon from "vue-material-design-icons/Xml.vue";
-import MailIcon from "vue-material-design-icons/Email.vue";
+import PersonIcon from "vue-material-design-icons/Account.vue"
+import CodeIcon from "vue-material-design-icons/Xml.vue"
+import MailIcon from "vue-material-design-icons/Email.vue"
 
 export default {
-  // Name
   name: "Nav",
 
-  // Components
   components: {
     PersonIcon,
     CodeIcon,
-    MailIcon,
+    MailIcon
   },
 
-  // Data
-  data: () => {
+  data() {
     return {
-      iconSize: 40,
-    };
+      iconSize: 35,
+    }
   },
-};
+
+  methods: {
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+  }
+}
 </script>
 
 <style lang="scss">
 @import "@/styles/global.scss";
 
 .nav {
-  height: 70px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 3px 3px -2px rgba($stockBlack, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
 
   &__link {
     @include iconLink;

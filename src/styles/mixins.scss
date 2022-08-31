@@ -14,16 +14,8 @@
 }
 
 @mixin headshot {
-  width: 260px;
-  border-radius: 5px;
-
-  @include tablet {
-    width: 280px;
-  }
-
-  @include desktop {
-    width: 300px;
-  }
+  width: 50%;
+  max-width: 230px;
 }
 
 @mixin flexCenter {
@@ -47,7 +39,6 @@
 
 @mixin button {
   @include link;
-  border-radius: 5px;
   color: $stockWhite;
   border: 1px solid $stockWhite;
   transition: $transition;

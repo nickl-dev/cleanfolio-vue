@@ -17,47 +17,41 @@
 </template>
 
 <script>
-import LinkedInIcon from "vue-material-design-icons/Linkedin.vue";
-import GitHubIcon from "vue-material-design-icons/Github.vue";
+import LinkedInIcon from "vue-material-design-icons/Linkedin.vue"
+import GitHubIcon from "vue-material-design-icons/Github.vue"
 
 export default {
-  // Name
   name: "Contact",
 
-  // Components
   components: {
     LinkedInIcon,
-    GitHubIcon,
+    GitHubIcon
   },
 
-  // Data
-  data: () => {
+  data () {
     return {
       iconSize: 45,
       // Replace with your LinkedIn profile link
       linkedin: "https://nlaldevcleanfolio.netlify.app/",
       // Replace with your GitHub profile link
       github: "https://nlaldevcleanfolio.netlify.app/",
-    };
-  },
-};
+    }
+  }
+}
 </script>
 
 <style lang="scss">
 @import "@/styles/global.scss";
-
 .contact {
   @include flexCenter;
   @include textCenter;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
   @include padding5;
-
   &__thankyou {
     margin: 5vh 0;
     font-size: $font18;
   }
-
   &__link {
     margin: 0 10px;
     @include iconLink;
