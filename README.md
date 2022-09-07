@@ -1,6 +1,6 @@
 ## Cleanfolio
 
-<a href="https://nlaldevgreetings.netlify.app/">
+<a href="https://nlaldevcleanfolio.netlify.app/">
   <img 
     src="https://i.pinimg.com/originals/f4/7f/d8/f47fd896add554744b4114d964b61b41.gif"
     alt="GIF that shows responsive design across a desktop, tablet and mobile device"
@@ -12,7 +12,7 @@
 
 A clean and simple portfolio site template for developers.
 
-Click [here](https://nlaldevgreetings.netlify.app/) to see demo.
+Click [here](https://nlaldevcleanfolio.netlify.app/) to see demo.
 
 Built with ```Vue, JavaScript, SASS```
 
