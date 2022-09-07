@@ -1,8 +1,9 @@
-import Vue from "vue"
-import VueRouter from "vue-router"
-import About from "../pages/About.vue"
-import Development from "../pages/Development.vue"
-import Contact from "../pages/Contact.vue"
+import Vue from "vue";
+import VueRouter from "vue-router";
+import About from "@/pages/About";
+import MyWork from "@/pages/MyWork";
+import Contact from "@/pages/Contact";
+import PageNotFound from '@/pages/PageNotFound';
 
 Vue.use(VueRouter)
 
@@ -13,14 +14,19 @@ const routes = [
     component: About
   },
   {
-    path: "/development",
-    name: "Development",
-    component: Development
+    path: "/my-work",
+    name: "MyWork",
+    component: MyWork
   },
   {
     path: "/contact",
     name: "Contact",
     component: Contact
+  },
+  {
+    path: '*',
+    name: PageNotFound,
+    component: PageNotFound
   }
 ]
 

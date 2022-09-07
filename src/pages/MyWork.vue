@@ -1,6 +1,6 @@
 <template>
-  <div class="development">
-    <h1 class="development__heading">DEVELOPMENT</h1>
+  <div class="my-work">
+    <h1 class="my-work__heading">My Work</h1>
     <Project
       v-for="(project, index) in projects"
       :key="index"
@@ -19,7 +19,7 @@ import Project from "@/components/Project.vue"
 import projectScreenshot from "@/assets/project-screenshots/project-screenshot.jpg"
 
 export default {
-  name: "Development",
+  name: "MyWork",
 
   components: { Project },
 
@@ -46,7 +46,7 @@ export default {
 
 <style lang="scss">
 @import "@/styles/global.scss";
-.development {
+.my-work {
   @include flexCenter;
   @include flexColumn;
   @include padding5;
