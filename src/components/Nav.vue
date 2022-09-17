@@ -70,28 +70,20 @@ export default {
 @import "@/styles/global.scss";
 
 .nav {
+  @include flexCenter;
   height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 3px 3px -2px rgba($stockBlack, 0.3);
   position: fixed;
   top: 0;
   width: 100%;
   background: white;
-
+  
   &__link {
     @include iconLink;
     margin: 0 20px;
     transition: $transition;
-
-    &:hover {
-      box-shadow: 0 3px 2px -2px rgba($stockBlack, 1);
-    }
-
-    &--active {
-      box-shadow: 0 3px 2px -2px rgba($stockBlack, 0.5);
-    }
+    &:hover { box-shadow: 0 3px 2px -2px rgba($stockBlack, 1); }
+    &--active { box-shadow: 0 3px 2px -2px rgba($stockBlack, 0.5); }
   }
 }
 </style>

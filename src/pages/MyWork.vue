@@ -50,11 +50,7 @@ export default {
   @include flexCenter;
   @include flexColumn;
   @include padding5;
-  &__heading {
-    margin-top: 150px;
-    @include desktop {
-      margin-bottom: 30px;
-    }
-  }
+  &__heading { margin-top: 150px; }
+  @include desktop { margin-bottom: 30px; }
 }
 </style>

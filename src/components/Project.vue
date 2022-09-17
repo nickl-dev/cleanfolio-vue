@@ -50,13 +50,14 @@ export default {
 
 <style lang="scss">
 @import '@/styles/global.scss';
-
 .project {
   @include flexCenter;
   @include flexColumn;
   margin: 70px 0;
-
+  max-width: 500px;
+  
   @include desktop {
+    max-width: none;
     width: 100%;
     flex-direction: row;
     align-items: flex-start;
@@ -66,30 +67,33 @@ export default {
     margin-bottom: 25px;
     width: 100%;
     max-width: 690px;
-
-    @include tablet {
-      margin-bottom: 50px;
-    }
-
     @include desktop {
       width: 300px;
       margin: 0;
+      padding-right: 30px; 
     }
   }
 
   &__title {
-    @include projectTitle;
+    margin-bottom: 20px;
+    font-size: $font20;
+    font-weight: 600;
+    text-align: start;
+    @include tablet { font-size: $font24; }  
   }
 
   &__description {
     margin-bottom: 15px;
-    @include projectSubtext;
+    text-align: start;
+    @include tablet { font-size: $font18; }
   }
 
   &__techStack {
+    text-align: start;
+    font-size: $font14;
+    font-family: monospace;
     margin-bottom: 15px;
-    font-style: italic;
-    @include projectSubtext;
+    @include tablet { font-size: $font16; }
   }
 
   &__links {
@@ -100,32 +104,22 @@ export default {
   &__demo {
     @include demoLink;
     &:hover {
-      @include invertToBlack;
+      border-color: $stockBlack;
+      background: $stockBlack;
+      color: $stockWhite;
     }
   }
 
-  &__code {
-    @include codeLink;
-  }
+  &__code { @include codeLink; }
 
   &__image {
     width: 100%;
     margin: auto;
-    max-width: 500px;
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.175);
     transition: 0.1s ease-in-out;
-
-    &:visited {
-      @include iconLink;
-    }
-
-    &:hover {
-      box-shadow: 0 32px 96px rgba(0, 0, 0, 0.3);
-    }
-
-    @include desktop {
-      margin: 0;
-    }
+    &:visited { @include iconLink; }
+    &:hover { box-shadow: 0 32px 96px rgba(0, 0, 0, 0.3); }
+    @include desktop { margin: 0; max-width: 500px; }
   }
 }
 </style>

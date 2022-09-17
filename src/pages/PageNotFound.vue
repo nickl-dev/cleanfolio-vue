@@ -15,10 +15,8 @@ export default {
 @import "@/styles/global.scss";
 
 div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
+  @include flexColumn;
   height: 100vh;
 }
 
