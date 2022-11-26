@@ -15,15 +15,15 @@
 </template>
 
 <script>
-import Project from "@/components/Project.vue"
-import projectScreenshot from "@/assets/project-screenshots/project-screenshot.jpg"
+import Project from '@/components/Project.vue';
+import projectScreenshot from '@/assets/project-screenshots/project-screenshot.jpg';
 
 export default {
-  name: "MyWork",
+  name: 'MyWork',
 
   components: { Project },
 
-  data () {
+  data() {
     return {
       /**
        * Array that stores the information for each project you want to showcase
@@ -31,26 +31,30 @@ export default {
        */
       projects: [
         {
-          title: "Project Title",
-          description: "Project description",
-          techStack: "Tech stack used",
+          title: 'Project Title',
+          description: 'Project description',
+          techStack: 'Tech stack used',
           image: projectScreenshot,
-          demo: "https://nlaldevcleanfolio.netlify.app/",
-          code: "https://nlaldevcleanfolio.netlify.app/"
+          demo: 'https://nickl-dev-cleanfolio.netlify.app/',
+          code: 'https://nickl-dev-cleanfolio.netlify.app/'
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss">
-@import "@/styles/global.scss";
+@import '@/styles/global.scss';
 .my-work {
   @include flexCenter;
   @include flexColumn;
   @include padding5;
-  &__heading { margin-top: 150px; }
-  @include desktop { margin-bottom: 30px; }
+  &__heading {
+    margin-top: 150px;
+  }
+  @include desktop {
+    margin-bottom: 30px;
+  }
 }
 </style>
